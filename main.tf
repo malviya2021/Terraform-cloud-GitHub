@@ -16,4 +16,7 @@ provider "aws" {
 resource "aws_instance" "Rahulinfra" {
 	ami = "ami-01a4f99c4ac11b03c" 
 	instance_type = "t2.micro"
+	tags = {
+        	Name = "Terraform-Server"
+ 	}
 }
